@@ -8,3 +8,4 @@
 - [Cameras](./docs/cameras.md)
 - [Tutorial](./docs/tutorial.md)
 - [Interactables](./docs/interactables.md)
+- [Prompts](./docs/prompts.md)
