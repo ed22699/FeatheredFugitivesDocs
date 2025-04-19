@@ -7,9 +7,3 @@ a series of challenges and exploration, unlock the electri-
 cal box to turn off the power to the gate and make your
 grand escape, all the while farmers and their dogs try to
 stop you.
-
-## Dev Notes
-- [Game Manager](gameManager.md)
-- [Interactables](interactables.md)
-- [Tutorial](tutorial.md)
-- [AI](AI.md)
