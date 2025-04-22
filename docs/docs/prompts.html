@@ -156,6 +156,11 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="prompts"><a class="header" href="#prompts">Prompts</a></h1>
+<p>Within the game there are prompts, these are text boxes that are displayed above
+some <a href="./interactables.html">interactables</a> when you come into range. They work
+by taking the world coordinates of the prompt object and translating it into 2D coordinates
+for the HUD, at which point it will instantiate a text prefab on these coordinates.</p>
+<p><img src="./images/prompts.png" alt="Prompts UML diagram" /></p>
 
                     </main>
 
@@ -180,6 +185,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
