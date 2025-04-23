@@ -6,4 +6,4 @@ on what it does, in turn triggering the `AimUI` and the `PlayerShootEggs`. There
 manipulates the cameras called `CameraControl`, this is in charge of looking up, it will lower the position of 
 the chicken on the screen so you can see more above you.
 
-![Camera UML](.images/cameras.png)
+![Camera UML](./images/cameras.png)
