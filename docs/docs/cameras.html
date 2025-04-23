@@ -156,6 +156,13 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="cameras"><a class="header" href="#cameras">Cameras</a></h1>
+<p>The cameras rely on the <code>CameraSwitcher</code> script, this is a script which holds all the
+Cinemachine cameras and is in charge of switching them out for the different views, i.e. looking behind
+and the regular camera. <code>LookBack</code> is a script that takes advantage of this and notifies the <code>GameManager</code>
+on what it does, in turn triggering the <code>AimUI</code> and the <code>PlayerShootEggs</code>. There is another script which
+manipulates the cameras called <code>CameraControl</code>, this is in charge of looking up, it will lower the position of
+the chicken on the screen so you can see more above you.</p>
+<p><img src=".images/cameras.png" alt="Camera UML" /></p>
 
                     </main>
 
@@ -186,22 +193,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
