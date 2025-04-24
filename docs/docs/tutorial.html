@@ -156,6 +156,15 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="tutorial"><a class="header" href="#tutorial">Tutorial</a></h1>
+<p>The tutorial system is primarily managed through the <code>PlayerMovement</code> script, as we wanted to limit the player’s actions to only those currently being introduced.
+For example, the player begins by simply being able to look around, followed by learning the movement controls. 
+Since <code>PlayerMovement</code> already handled core movement functionality, it made the most sense to use it as the base for controlling tutorial flow. 
+To manage which actions are enabled at any given time, we make use of the <code>InputHandler</code>, allowing us to toggle specific inputs on or off depending on the current tutorial step.
+For other features, like shooting, the script accesses methods within their respective scripts to toggle whether the player can perform those actions.
+As the player progresses, the script also updates the on-screen prompts to reflect the current action being taught, guiding them step-by-step. 
+Additionally, we implemented <code>INotify</code> within <code>PlayerMovement</code> to detect when specific actions have been completed, allowing the tutorial to progress in a controlled way. 
+Once the tutorial is finished, we use the <code>GameManager</code> to enable other game features, such as environmental prompts and interactions.</p> 
+<p><img src="./images/tutorial.png" alt="Tutorial UML" /></p>
 
                     </main>
 
