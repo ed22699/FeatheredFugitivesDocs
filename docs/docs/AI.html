@@ -156,6 +156,14 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="ai"><a class="header" href="#ai">AI</a></h1>
+<p>The AI system mainly consists of 3 behaviour trees (<code>Farmer</code>,
+<code>Dog</code> and <code>Tractor</code>), these utilize actions to create their Behaviours. They
+also link to a <code>Detector</code> which is used for applying the constraints used to
+find the chicken. All enemy objects are listed in the <code>AIManager</code> which controls the
+overall strategy of all the AIs through its logic and that of <code>ChokePointDetector</code>.
+As the <code>AIManager</code> triggers events they are notified to the <code>GameManger</code>, also events
+of the <code>GameManager</code> are used to alter certain behaviours of this script.</p>
+<p><img src="./images/AI.png" alt="AI UML diagram" /></p>
 
                     </main>
 
